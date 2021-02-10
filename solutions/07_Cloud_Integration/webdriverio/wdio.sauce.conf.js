@@ -27,8 +27,8 @@ exports.config = {
     /**
      * set Sauce credentials
      */
-    user: process.env.SAUCE_USERNAME,
-    key: process.env.SAUCE_ACCESS_KEY,
+    user: process.env.wmateci,
+    key: process.env.b6b352bbbd064a50be48c7d67eede8e3,
     /**
      * add @wdio/saucelabs-service
      */
