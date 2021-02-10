@@ -1,0 +1,14 @@
+name: CI/CD WebdriverIO
+on : [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - uses: ianwalter/puppeteer-container@v4.0.0
+    - name: Run Tests
+      run: |
+        cd ./solutions/06_CICD_Integration/webdriverio
+        npm install
+        npm run test
